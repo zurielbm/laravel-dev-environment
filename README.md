@@ -70,7 +70,7 @@ The `.env` file was updated to integrate properly with Valet/PhpMonitor proxying
 ###########################
 
 # Vite port mapping (LAN/dev proxy)
-VITE_PORT=5000
+VITE_PORT=5001
 
 # App URL proxied through Valet (PhpMonitor)
 APP_URL=http://custom-domain.test
@@ -82,7 +82,7 @@ APP_PORT=8000
 This ensures:
 
 - Laravel’s `APP_URL` matches the Valet-served domain (`custom-domain.test`)
-- Vite runs on a fixed LAN port (`5000`)
+- Vite runs on a fixed LAN port (`5001`)
 - The container exposes the app on port `8000`, which Valet/PhpMonitor forwards internally
 
 ---
