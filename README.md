@@ -75,15 +75,15 @@ VITE_PORT=5001
 # App URL proxied through Valet (PhpMonitor)
 APP_URL=http://custom-domain.test
 
-# Expose the Laravel app on port 8000 for proxy forwarding
-APP_PORT=8000
+# Expose the Laravel app on port 8001 for proxy forwarding
+APP_PORT=8001
 ```
 
 This ensures:
 
 - Laravel’s `APP_URL` matches the Valet-served domain (`custom-domain.test`)
 - Vite runs on a fixed LAN port (`5001`)
-- The container exposes the app on port `8000`, which Valet/PhpMonitor forwards internally
+- The container exposes the app on port `8001`, which Valet/PhpMonitor forwards internally
 
 ---
 
@@ -138,7 +138,7 @@ This allows PhpMonitor/Valet to catch traffic on `custom-domain.test` and route 
 
 - `docker-compose-dev.yml` is **for development only**.
 - A separate `docker-compose-prod.yml` will be created for production deployment.
-- PhpMonitor + Valet handle the domain proxying locally so the app can be accessed at `http://custom-domain.test` instead of `http://localhost:8000`.
+- PhpMonitor + Valet handle the domain proxying locally so the app can be accessed at `http://custom-domain.test` instead of `http://localhost:8001`.
 
 ```shell
 alias sail="COMPOSE_FILE=docker-compose-dev.yml ./vendor/bin/sail"
