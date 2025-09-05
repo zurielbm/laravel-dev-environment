@@ -121,18 +121,19 @@ This allows PhpMonitor/Valet to catch traffic on `custom-domain.test` and route 
    sail artisan migrate
    ```
 3. Start frontend dev server with hot reload:
+   Added /.pnpm-store to gitignore
 
    ```bash
    sail pnpm run install
    ```
 
-4. Start frontend dev server with hot reload:
+5. Start frontend dev server with hot reload:
 
    ```bash
    sail pnpm run dev
    ```
 
-5. Visit the app at:
+6. Visit the app at:
    ```
    http://custom-domain.test
    ```
