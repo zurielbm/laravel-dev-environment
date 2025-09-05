@@ -141,5 +141,5 @@ This allows PhpMonitor/Valet to catch traffic on `custom-domain.test` and route 
 - PhpMonitor + Valet handle the domain proxying locally so the app can be accessed at `http://custom-domain.test` instead of `http://localhost:8001`.
 
 ```shell
-alias sail="COMPOSE_FILE=docker-compose-dev.yml ./vendor/bin/sail"
+alias sail="COMPOSE_FILE=compose.dev.yml ./vendor/bin/sail"
 ```
