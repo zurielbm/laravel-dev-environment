@@ -27,7 +27,7 @@ This publishes the default `docker-compose.yml` into your project.
 To avoid confusion with a production file, the default compose file was renamed:
 
 ```bash
-mv docker-compose.yml docker-compose-dev.yml
+mv docker-compose.yml compose.dev.yml
 ```
 
 ---
@@ -38,7 +38,7 @@ Since Sail defaults to looking for `docker-compose.yml`, an alias was added to p
 Add this to your shell configuration (`~/.zshrc` or `~/.bashrc`):
 
 ```bash
-alias sail="COMPOSE_FILE=docker-compose-dev.yml ./vendor/bin/sail"
+alias sail="COMPOSE_FILE=compose.dev.yml ./vendor/bin/sail"
 ```
 
 Reload your shell:
