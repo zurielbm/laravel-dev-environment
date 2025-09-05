@@ -3,7 +3,7 @@
 ## 🚀 Overview
 
 This project uses [Laravel Sail](https://laravel.com/docs/sail) for the local development environment.  
-Since I already use [**Laravel Valet**](https://laravel.com/docs/valet) with [**PhpMonitor**](https://phpmon.app) to proxy domains locally, I configured Sail’s `docker-compose.yml` to avoid conflicts and renamed it to `docker-compose-dev.yml` to clearly separate it from a future production Docker setup.
+Since I already use [**Laravel Valet**](https://laravel.com/docs/valet) with [**PhpMonitor**](https://phpmon.app) ([YT Tutorial](https://youtu.be/fO3hVhkvm3w?si=t0-63IJ3cUwGr6_u)) to proxy domains locally, I configured Sail’s `docker-compose.yml` to avoid conflicts and renamed it to `docker-compose-dev.yml` to clearly separate it from a future production Docker setup.
 
 ---
 
