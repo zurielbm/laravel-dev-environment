@@ -99,8 +99,8 @@ Key adjustments inside `docker-compose-dev.yml`:
 - **Port mappings** to support proxy & Vite:
   ```yaml
   ports:
-    - "${APP_PORT:-8000}:80"
-    - "${VITE_PORT:-5000}:${VITE_PORT:-5173}"
+    - "${APP_PORT:-80}:80"
+    - "${VITE_PORT:-5173}:${VITE_PORT:-5173}"
   ```
 
 This allows PhpMonitor/Valet to catch traffic on `custom-domain.test` and route it into the container.
